@@ -47,7 +47,7 @@ def distort_generation(I, factora, factorb, posx=0.5, posy=0.5):
 
 def main(image, factor=1, generate=False, posx=0.5, posy=0.5, save=False, show=True):
     # posx, posy = 0.5, 0.5
-    I = np.asarray(Image.open())
+    I = np.asarray(Image.open(image))
     print(f"I Shape is {I.shape}")
 
     if generate == True:
